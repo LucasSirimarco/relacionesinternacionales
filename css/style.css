@@ -76,6 +76,10 @@ body {
 	-webkit-font-smoothing: antialiased !important;
 	
 }
+.resaltado{
+    background-color: #c7f5fd;
+    border-bottom: #535353 solid 2px;
+}
 
 
 .iconos{
