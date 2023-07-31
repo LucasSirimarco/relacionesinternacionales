@@ -1,9 +1,4 @@
-// SmoothScroll for websites v1.2.1
-// Licensed under the terms of the MIT license.
 
-// People involved
-//  - Balazs Galambosi (maintainer)  
-//  - Michael Herf     (Pulse Algorithm)
 
 (function(){
   
@@ -145,7 +140,7 @@ var lastScroll = +new Date;
  */
 function scrollArray(elem, left, top, delay) {
     
-    delay || (delay = 1000);
+    delay || (delay = 3000);
     directionCheck(left, top);
 
     if (options.accelerationMax != 1) {
@@ -284,10 +279,10 @@ function wheel(event) {
     // scale by step size
     // delta is 120 most of the time
     // synaptics seems to send 1 sometimes
-    if (Math.abs(deltaX) > 1.2) {
+    if (Math.abs(deltaX) > 5.2) {
         deltaX *= options.stepSize / 120;
     }
-    if (Math.abs(deltaY) > 1.2) {
+    if (Math.abs(deltaY) > 15) {
         deltaY *= options.stepSize / 120;
     }
     
@@ -516,7 +511,7 @@ var isMouseWheelSupported = 'onmousewheel' in document;
 
 if (isMouseWheelSupported && isChrome) {
 	addEvent("mousedown", mousedown);
-	addEvent("mousewheel", wheel);
+	addEvent("mousewheel", wheel, { passive: false });
 	addEvent("load", init);
 };
 

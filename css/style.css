@@ -78,7 +78,12 @@ body {
 }
 
 
-
+.iconos{
+    width: 120px;
+    height: 120px;
+    margin: 20px 20px 40px 20px;
+    padding: 10px;
+}
 h1 strong{
 	font-weight: 900;
 }
