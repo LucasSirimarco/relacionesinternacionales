@@ -39,7 +39,8 @@ https://colorhunt.co/palette/fff7d4ffd95ac07f004c3d3d COLOR UI
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+:root,
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	RESET
@@ -68,7 +69,7 @@ body {
 	color: #000000;
 	font: normal 16px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	background-color: #000;
+	background-color: #442c00;
 	overflow-x: hidden;
 	line-height: 1.5;
         font-family: 'Lato', sans-serif;
@@ -76,9 +77,55 @@ body {
 	-webkit-font-smoothing: antialiased !important;
 	
 }
+
+
+  .color-changing-icon {
+    width: 30px;
+    position: absolute;
+    left: 75px;
+
+  }
+
+  
+.efectoResalte{
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #000000, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 700;
+  color: transparent;
+  -webkit-animation: reveal 750ms ease-in-out forwards 100ms, glow 1250ms linear infinite 1000ms;
+  animation: reveal 1500ms ease-in-out forwards 100ms, glow 1250ms linear infinite 1000ms;
+}
+@-webkit-keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @-webkit-keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #26ff31
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(78, 255, 72);
+      
+    }
+  }
 .resaltado{
-    background-color: #c7f5fd;
-    border-bottom: #535353 solid 2px;
+    background-color: #e6fbff;
+    border-bottom: #afafaf solid 1px;
 }
 
 
