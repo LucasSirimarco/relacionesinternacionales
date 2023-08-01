@@ -18,6 +18,11 @@ VERSION : 1.1
     }
     .ramsh-menu a{
         display:none;
+    }.nav div div a{
+        display:none;
+    }
+    .navbar-brand{
+        display: none;
     }
     
 }
