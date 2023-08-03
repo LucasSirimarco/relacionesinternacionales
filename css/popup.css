@@ -88,6 +88,7 @@ body {
 	transition: .3s ease all;
 	transform: scale(0.7);
 	opacity: 0;
+
 }
 
 .popup .btn-cerrar-popup {
@@ -97,6 +98,7 @@ body {
 	text-align: right;
 	transition: .3s ease all;
 	color: #BBBBBB;
+	margin: 20px auto 10px auto;
 }
 
 .popup .btn-cerrar-popup:hover {

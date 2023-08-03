@@ -97,6 +97,7 @@ body {
 	text-align: right;
 	transition: .3s ease all;
 	color: #BBBBBB;
+	margin: 20px auto 10px auto;
 }
 
 .popup .btn-cerrar-popup:hover {
