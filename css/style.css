@@ -49,7 +49,13 @@ https://colorhunt.co/palette/fff7d4ffd95ac07f004c3d3d COLOR UI
 *{ 
 	padding: 0; 
 	margin: 0; 
-	vertical-align: baseline; 
+	vertical-align: baseline;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 html
@@ -128,7 +134,9 @@ body {
     border-bottom: #afafaf solid 1px;
 }
 
-
+#separar{
+    margin-top: 200px;
+}
 .iconos{
     width: 120px;
     height: 120px;

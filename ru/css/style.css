@@ -50,6 +50,13 @@ https://colorhunt.co/palette/fff7d4ffd95ac07f004c3d3d COLOR UI
 	padding: 0; 
 	margin: 0; 
 	vertical-align: baseline; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 html
